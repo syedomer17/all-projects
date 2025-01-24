@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700');
+*{
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border-radius: 0px !important;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: #B8D8BA !important;
+}
+
+.day-container{
+  width: 20%;
+  background: #D9EEE1;
+  cursor: pointer;
+  padding: 10px 0px;
+}
+
+.day-container.active,
+.day-container:hover{
+  background: #059862;
+}
+
+.front-img{
+  width: 200px;
+  height: 200px;
+}
+
+.weather-img{
+  width: 40px;
+  height: 40px;
+}
+
+.card{
+  width: 400px;
+  background: #f1f1f1 !important
+}
+
+.day-container > small{
+  color: #000 !important;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  .card{
+    width: 98%;
+  }
+}
